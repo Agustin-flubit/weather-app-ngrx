@@ -1,6 +1,6 @@
 # Repository contents
 
-This repository contains the full application of a [Weather App] using [Angular 5] and [ngrx] approach that allows you to search the weather forecast for a city.
+This repository contains the full application of a Weather App using Angular 5 and ngrx that allows you to search the weather forecast for a city.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
