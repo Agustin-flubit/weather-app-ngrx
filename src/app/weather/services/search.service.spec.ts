@@ -5,8 +5,8 @@ import { defer } from 'rxjs/observable/defer';
 
 import { SearchService } from './search.service';
 
-import { generateMockForecast } from '../../weather/models/forecast';
-import { Forecast } from '../../weather/models/forecast';
+import { generateMockForecast } from '../models/forecast';
+import { Forecast } from '../models/forecast';
 
 
 export function asyncData<T>(data: T) {

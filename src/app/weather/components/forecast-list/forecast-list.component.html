@@ -1,0 +1,24 @@
+<table class="table" *ngIf="forecast.length > 0; else noResults">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">City</th>
+    <th scope="col">{{forecast[0].list[0].dt_txt | date:'shortTime'}}</th>
+    <th scope="col">{{forecast[0].list[2].dt_txt | date:'shortTime'}}</th>
+    <th scope="col">{{forecast[0].list[4].dt_txt | date:'shortTime'}}</th>
+    <th scope="col">{{forecast[0].list[6].dt_txt | date:'shortTime'}}</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let fore of forecast">
+    <th scope="row">{{fore.city.name}}</th>
+    <th *ngFor="let list of fore.list; let i = index;"
+        [hidden]="i % 2 !== 0 || i > 6">
+      {{list.main.temp | toDegrees}}
+    </th>
+  </tr>
+  </tbody>
+</table>
+
+<ng-template #noResults>
+  <p class="no-results">No cities loaded. Search for a city forecast.</p>
+</ng-template>

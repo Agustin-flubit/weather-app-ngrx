@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { Forecast } from '../../../core/models/forecast';
+import { Forecast } from '../models/forecast';
 
 
 export const SEARCH_CITY_FORECAST = 'SEARCH_CITY_FORECAST';
