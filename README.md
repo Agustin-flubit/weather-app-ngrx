@@ -26,6 +26,7 @@ We can install the master branch using the following commands:
 
     git clone https://github.com/Agustin-flubit/weather-app-ngrx.git
     cd weather-app-ngrx
+    npm install
     
 If you prefer the Yarn package manager, instead of npm install you can also run:
 

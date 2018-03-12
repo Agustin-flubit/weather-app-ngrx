@@ -59,5 +59,5 @@ describe('SearchBarComponent', () => {
       fixture.detectChanges();
       expect(getForecastSpy.calls.any()).toBe(true, 'search called');
     });
-  })
+  });
 });
