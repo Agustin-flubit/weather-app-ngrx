@@ -65,13 +65,3 @@ describe('weather effects', () => {
   });
 });
 
-@Injectable()
-export class SearchServiceStub {
-  constructor() {}
-
-  search(city?: string) {
-    return Observable.of(generateMockForecast());
-  }
-}
-
-
